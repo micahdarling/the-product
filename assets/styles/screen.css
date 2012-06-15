@@ -1,0 +1,335 @@
+/* ---------------------------------------------------------------------
+Original Author: Micah Darling
+Contributors: N/A
+
+Target Browsers: All
+Media Type: Screen, Projection
+Width: All Sizes
+------------------------------------------------------------------------ */
+
+/* ---------------------------------------------------------------------
+RESET CSS (thanks Eric Meyer)
+------------------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    background-color: #d8d8d9;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+/* Always show a vertical scrollbar, even when there is no scrolling */
+html {
+    overflow-y: scroll;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+
+/* ---------------------------------------------------------------------
+ HTML5 Block / Inline Block declarations
+------------------------------------------------------------------------ */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+audio, canvas, video {
+    display: inline-block;
+}
+
+/* ---------------------------------------------------------------------
+ Form Styles
+------------------------------------------------------------------------ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+input[type=search] {
+  -webkit-appearance:textfield;
+  -webkit-box-sizing:content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+
+/* ---------------------------------------------------------------------
+ Typography Styles
+------------------------------------------------------------------------ */
+
+
+p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------------------------------------------------------------------
+ Heading Styles
+------------------------------------------------------------------------ */
+
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-weight: bold;
+}
+
+.h1 { font-size: 24px; }
+
+.h2 { font-size: 20px; }
+
+.h3 { font-size: 16px; }
+
+.h4 { font-size: 14px; }
+
+
+/* ---------------------------------------------------------------------
+ Layout Styles
+------------------------------------------------------------------------ */
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bg-wrapper {
+    background-color: #fff;
+}
+
+.grid-group {
+    clear: both;
+}
+
+.grid-group:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.grid-group .grid-group { 
+    width: auto; 
+    max-width: none; 
+    min-width: 0; 
+    margin: 0 -20px; 
+}
+
+.grid {
+    position:relative;
+    float:left;
+    padding: 20px 20px 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.size1of1,
+.size1of2,
+.size1of3,
+.size2of3,
+.size1of4,
+.size3of4,
+.size1of5,
+.size2of5,
+.size3of5,
+.size4of5,
+.size1of6,
+.size5of6,
+.size1of7 { width:100% }
+
+.size1,
+.size2,
+.size3,
+.size4,
+.size5,
+.size6,
+.size7,
+.size8,
+.size9,
+.size10,
+.size11,
+.size12 { width: 100%; }
+
+.blocks {
+    display: block;
+    clear: both;
+    list-style: none;
+    margin-left: -20px;
+}
+
+.blocks::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.blocks > li {
+    margin-bottom: 20px;
+    display:block;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing: border-box;
+    padding: 0 0 0 20px;
+    background:none;
+}
+
+.blocks span {
+    display: block;
+}
+
+.blocks img {
+    max-width: 100%;
+}
+
+.blocks-three-up > li,
+.blocks-four-up > li,
+.blocks-five-up > li,
+.blocks-six-up > li {
+    float:left;
+    display: block;
+}
+
+.blocks-three-up > li,
+.blocks-four-up > li,
+.blocks-five-up > li {
+    width:50%;
+}
+
+.blocks-six-up > li {
+    width: 33.333333%;
+}
+
+.blocks-three-up > li:nth-child(2n+1),
+.blocks-four-up > li:nth-child(2n+1),
+.blocks-five-up > li:nth-child(2n+1),
+.blocks-six-up > li:nth-child(2n+1) {
+    clear:left;
+}
+
+.blocks-three-up > li:nth-child(2n+1),
+.blocks-four-up > li:nth-child(2n+1),
+.blocks-five-up > li:nth-child(2n+1),
+.blocks-five-up > li:nth-child(3n+1),
+.blocks-six-up > li:nth-child(3n+1) { 
+    clear:none; 
+}
+
+.blocks-three-up > li:nth-child(2n+1),
+.blocks-four-up > li:nth-child(2n+1),
+.blocks-five-up > li:nth-child(2n+1),
+.blocks-six-up > li:nth-child(2n+1) {
+    clear: none;
+}
+
+
+/* ====== media ====== */
+.media {margin: 10px 0;}
+.media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+.media .img {float:left; margin-right: 10px;}
+.media .img img{display:block;}
+.media .imgExt{float:right; margin-left: 10px;}
+
+/* ---------------------------------------------------------------------
+ Container Styles
+------------------------------------------------------------------------ */
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.header {
+    padding-top: 20px;
+}
+
+.main {
+    background-color: #fff;
+}
+
+.box {
+    padding: 10px;
+    color: #fff;
+    background-color: #999;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.aside {
+    margin-bottom: 0;
+    color: #fff;
+    background-color: #999;
+}
+
+.footer-wrapper {
+    min-height: 150px;
+    color: #fff;
+    background-color: #333333;
+}
+
+.footer.grid {
+    margin-bottom: 0;
+}

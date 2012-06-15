@@ -1,0 +1,17 @@
+/* ---------------------------------------------------------------------
+Original Author: Micah Darling
+Contributors: N/A
+
+Target Browsers: All
+Media Type: Screen, Projection
+Width: Min-Width 992px
+------------------------------------------------------------------------ */
+
+.wrapper {
+    max-width: 960px;
+    padding: 0 10px;
+}
+
+.wrapper.main {
+	margin-top: 40px;
+}

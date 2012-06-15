@@ -1,0 +1,58 @@
+/* ---------------------------------------------------------------------
+Original Author: Micah Darling
+Contributors: N/A
+
+Target Browsers: IE7, IE6
+Media Type: Screen, Projection
+Width: All Sizes
+------------------------------------------------------------------------ */
+
+/* Bicubic resizing for non-native sized IMG */
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+audio, canvas, video {
+    display: inline;
+    zoom: 1;
+}
+
+.wrapper {
+	width: 980px;
+}
+
+.size1of1 { width: 940px }
+.size1of2 { width: 460px }
+	.size1of2 .size1of2 { width: 220px }
+		.size1of2 .size1of2 .size1of2 { width: 100px }
+	.size1of2 .size1of3 { width: 133px }
+.size1of3 { width: 300px }
+.size2of3 { width: 640px }
+.size1of4 { width: 220px }
+.size3of4 { width: 75% }
+.size1of5 { width: 172px }
+.size2of5 { width: 40% }
+.size3of5 { width: 60% }
+.size4of5 { width: 80% }
+.size1of6 { width: 16.666667% }
+.size5of6 { width: 83.333333% }
+.size1of7 { width: 14.285714% }
+
+
+.size1  { width: 60px; }
+.size2  { width: 140px; }
+.size3  { width: 220px; }
+.size4  { width: 300px; }
+.size5  { width: 380px; }
+.size6  { width: 460px; }
+.size7  { width: 540px; }
+.size8  { width: 620px; }
+.size9  { width: 700px; }
+.size10 { width: 780px; }
+.size11 { width: 860px; }
+.size12 { width: 940px; }
+
+.blocks-three-up > li { width: 30%; }
+.blocks-four-up > li { width: 23%; }
+.blocks-five-up > li{ width: 18%; }
+.blocks-six-up > li{ width: 14%; }
