@@ -123,6 +123,11 @@ p:last-child {
     margin-bottom: 0;
 }
 
+.style-list {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
 /* ---------------------------------------------------------------------
  Heading Styles
 ------------------------------------------------------------------------ */
@@ -138,7 +143,10 @@ p:last-child {
 
 .h2 { font-size: 20px; }
 
-.h3 { font-size: 16px; }
+.h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
 
 .h4 { font-size: 14px; }
 
@@ -200,19 +208,6 @@ p:last-child {
 .size1of6,
 .size5of6,
 .size1of7 { width:100% }
-
-.size1,
-.size2,
-.size3,
-.size4,
-.size5,
-.size6,
-.size7,
-.size8,
-.size9,
-.size10,
-.size11,
-.size12 { width: 100%; }
 
 .blocks {
     display: block;
@@ -291,8 +286,7 @@ p:last-child {
 .media {margin: 10px 0;}
 .media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
 .media .img {float:left; margin-right: 10px;}
-.media .img img{display:block;}
-.media .imgExt{float:right; margin-left: 10px;}
+.media .img img {display:block;}
 
 /* ---------------------------------------------------------------------
  Container Styles

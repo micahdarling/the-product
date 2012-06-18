@@ -13,5 +13,5 @@ Width: Min-Width 992px
 }
 
 .wrapper.main {
-	margin-top: 40px;
+	margin: 40px auto;
 }

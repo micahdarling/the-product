@@ -20,7 +20,11 @@ Width: Min-Width 680px
 }
 
 .wrapper > .grid-group {
-    border-bottom: 1px solid #cecece;   /* For example purposes ONLY. */
+    border-bottom: 2px solid #cecece;   /* For example purposes ONLY. */
+}
+
+.wrapper > .grid-group:last-child {
+    border-bottom: none;   /* For example purposes ONLY. */
 }
 
 .grid {    
@@ -35,8 +39,6 @@ Width: Min-Width 680px
 .grid:last-child {    
     float: right;
 }
-
-/* --------- With border-box --------- */
 
 /* --------- Grid Sizes --------- */
 
@@ -54,20 +56,6 @@ Width: Min-Width 680px
 .size5of6 { width: 83.333333% }
 .size1of7 { width: 14.285714% }
 
-
-.size1  { width: 8.333333%; }
-.size2  { width: 16.666666%; }
-.size3  { width: 25%; }
-.size4  { width: 33.333332%; }
-.size5  { width: 41.666665%; }
-.size6  { width: 50%; }
-.size7  { width: 58.333331%; }
-.size8  { width: 66.666664%; }
-.size9  { width: 75%; }
-.size10 { width: 83.333333%; }
-.size11 { width: 91.666663%; }
-.size12 { width: 100%; }
-
 /* --------- Pull --------- */
 
 .pull1of2 { left: -50% }
@@ -82,16 +70,6 @@ Width: Min-Width 680px
 .pull1of6 { left: -16.666667% }
 .pull5of6 { left: -83.333333% }
 .pull1of7 { left: -14.285714% }
-    
-.pull-two   { right: 17.4% }
-.pull-three { right: 26.1%; }
-.pull-four  { right: 34.8%; }
-.pull-five  { right: 43.5%; }
-.pull-six   { right: 52.2%; }
-.pull-seven { right: 60.9%; }
-.pull-eight { right: 69.6%; }
-.pull-nine  { right: 78.3%; }
-.pull-ten   { right: 87%; }
 
 /* --------- Push --------- */
 
@@ -107,16 +85,6 @@ Width: Min-Width 680px
 .push1of6 { left: 16.666667% }
 .push5of6 { left: 83.333333% }
 .push1of7 { left: 14.285714% }
-
-.push-two   { left: 17.4% }
-.push-three { left: 26.1%; }
-.push-four  { left: 34.8%; }
-.push-five  { left: 43.5%; }
-.push-six   { left: 52.2%; }
-.push-seven { left: 60.9%; }
-.push-eight { left: 69.6%; }
-.push-nine  { left: 78.3%; }
-.push-ten   { left: 87%; }
 
 /* --------- Blocks --------- */
 
